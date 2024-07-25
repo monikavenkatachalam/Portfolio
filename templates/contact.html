@@ -1,0 +1,174 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+   
+
+<main>
+        <section>
+
+            
+            <div>
+                <h2>Contact Information</h2>
+                <ul>
+                    <li> Phone: 9876543210</li>
+                    <li> Email: monika@gmail.com</li>
+                    <li> Address: Namakkal,Tamilnadu</li>
+                </ul>
+            </div>
+
+            
+            <div>
+                <h2>Send a Message</h2>
+                <form>
+                    <div class="from-group">
+                        <label>Name   </label>
+                        <input type="text" name ="name" class="form-control" required>
+                    </div>
+            
+                    <div class="from-group">
+                        <label>Mail-id   </label>
+                        <input type="text" Mail-id ="Mail-id" class="form-control" required>
+                    </div>
+            
+                    <div class="from-group">
+                        <label>Message</label>
+                        <input type="text" message ="message" class="form-control">
+                    </div>
+            
+                    <input type="submit" value="Send"> 
+                   
+              
+                </form>
+            </div>
+        </section>
+    </main>
+
+    
+    
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monika V | Contact</title>
+    <style>
+        /* Basic Styling (Same as Homepage and About) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000000; 
+            color: #ffffff; 
+            line-height: 1.6;
+        }
+
+        nav { /* (Same as other pages) */
+            background-color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(247, 247, 247, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a { /* (Same as other pages) */
+            color: #333;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover { /* (Same as other pages) */
+            background-color: #e9e9e9;
+        }
+
+        .container { /* (Same as other pages) */
+            max-width: 960px;
+            margin: auto;
+            padding: 0 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 8rem 0; /* Increased padding for fixed navbar */
+            text-align: center; /* Center contact information */
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Contact Details */
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+
+        .contact-details p {
+            margin-bottom: 0.8rem;
+        }
+
+        /* Social Links */
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: white;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+
+            <div class="contact-details">
+                <p><i class="fas fa-envelope"></i> Email: monikamohan0605@gmail.com</p> 
+                <p><i class="fas fa-phone"></i> Phone: +91 9361236366</p> 
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/monika-venkatachalam-172365238/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/monikavenkatachalam" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

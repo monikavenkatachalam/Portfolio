@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monika V | Projects</title>
+    <style>
+        /* Basic Styling (Same as other pages) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #000000; 
+            color: #ffffff; 
+            line-height: 1.6;
+        }
+
+        nav { /* (Same as other pages) */
+            background-color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a { /* (Same as other pages) */
+            color: #333;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover { /* (Same as other pages) */
+            background-color: #e9e9e9;
+        }
+
+        .container { /* (Same as other pages) */
+            max-width: 960px;
+            margin: auto;
+            padding: 0 1rem;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 8rem 0; /* Increased padding for fixed navbar */
+        }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .project {
+            background-color: #fff;
+            color: #000000;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px #ffffffe0;
+        }
+
+        .project h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .project p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+    </nav>
+
+    <section class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <h3>Python</h3>
+                <p></p>FLASk</p>
+                <p><strong>Tools:</strong> Python, flask,mysql</p>
+                <p><strong>Outcome:</strong> 
+                <a href="#" class="project-link" target="_blank">View Project</a> 
+            </div>
+
+            <div class="project">
+                <h3>Sentiment Analysis of Social Media Data</h3>
+                <p>Analyzed social media posts to determine public sentiment about a new product launch.</p>
+                <p><strong>Tools:</strong> Python, Natural Language Toolkit (NLTK), Twitter API</p>
+                <p><strong>Outcome:</strong> Provided insights into customer sentiment, informing marketing strategies and product improvements.</p>
+                <a href="#" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
